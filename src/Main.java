@@ -47,9 +47,10 @@ public class Main {
         int born=17;
         int die=8;
         int ppl=12000000;
-        int demography = (born-die)*(ppl/1000);
+        int demography;
         int i=1;
         for(;i<10;i++){
+            demography = (born-die)*(ppl/1000);
             ppl+=demography;
         }
         System.out.println("Год "+i+", численность населения составляет "+ppl);
